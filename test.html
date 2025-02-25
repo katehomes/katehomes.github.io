@@ -1,0 +1,115 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- My Stylesheets -->
+<link href="style/cyberpunk.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/157579bfe5.js" crossorigin="anonymous"></script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+</style>
+</head>
+<body>
+
+<!-- The Modal -->
+<div class="" style="font-family: 'Press Start 2P', serif;">
+  <!-- Modal content -->
+  <div class="modal-flex-container outset">
+    <!-- Title (modal-header) -->
+    <div class="modal-item modal-header border grad">
+        <h2 class="modal-title">Kate Homes | Software Developer</h2>
+        <span class ="btn">
+            <i class="fa-regular fa-window-minimize test"></i>
+        </span>
+        <span class="btn">
+            <i class="fa-regular fa-window-maximize test"></i>
+        </span>
+        <span class="btn">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+    </div>
+    <!-- Browser -->
+    <div class="modal-item modal-browser">
+        <ul class="browser-flex-container">
+            <li class="browser-item browser-icon">
+                <span id="back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+            </li>
+            <li class="browser-item browser-icon">
+                <span id="forward">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </li>
+            <li class="browser-item browser-icon">
+                <span id="home">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+            </li>
+            <li class="browser-item">
+                <div class="browser-search-bar">
+                    <span class="search-bar-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </span>
+                    <span class="search-bar-text">https://katehomes.dev/test</span>
+                    <span id="favourite" class="search-bar-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+            </li>
+            <li class="browser-item browser-icon">
+                <span class="">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </li>
+        </ul>
+        
+    </div>
+    <!-- Body-->
+    <div class="modal-item modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+
+    const favourite = document.getElementById('favourite');
+    favourite.addEventListener('click', function () {
+
+        const activated = favourite.classList.contains('activated');
+
+        if(activated)
+        {
+            favourite.classList.remove('activated');
+
+        } else {
+            favourite.classList.add('activated');
+
+        }
+
+    });
+
+    
+
+</script>
+
+
+
+  
+  

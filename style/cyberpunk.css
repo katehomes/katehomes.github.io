@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+    background-color: #000;
+}
+
+.grad{
+    background: rgb(0,255,255);
+    background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(255, 85, 170,1) 100%);
+}
+
+
+.outset {
+    border: 3px outset #cccccc;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    /* display: none; /* Hidden by default */
+    /* position: fixed; /* Stay in place */
+    /* z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /* overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0); /* Fallback color */
+    /* background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: "Press Start 2P", serif;
+}
+
+
+.modal-flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    -ms-box-orient: vertical;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+      
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+
+    /* Modal Content */
+    
+    background-color: #cccccc;
+    margin: 50px auto;
+    padding: 3px;
+    border: 3px outset #cccccc;
+    width: 80vw; 
+    height: 70vh; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  
+}
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 3px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 5px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+/* Modal Header */
+.modal-header {
+    margin: 0;
+    background-color: #5cb85c;
+    color: white;
+    height: 25px;
+
+    display: flex; 
+    align-items: center;
+
+    border: 3px outset #cccccc;
+    /* border-width: 3px;
+    border-style: outset;
+    border-image: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(255, 85, 170,1) 100%) 1; */
+}
+.modal-title {
+    color: #000;
+    margin: 3px 0 0 0; 
+    padding-left: 10px;
+    font-size: .9em;
+    vertical-align: middle;
+    flex-grow: 1;
+    line-height: 1em;
+}
+
+.btn {
+    border: 3px outset #cccccc;
+    color: #000;
+    float: right;
+    font-size: small;
+    font-weight: bold;
+    /* padding: 3px; */
+    background-color: #cccccc;
+    margin: 3px 3px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover,
+  .btn:focus {
+    color: hotpink;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Modal Body */
+  
+.modal-body {
+    padding: 3px 16px;
+    background-color: #000;
+    overflow: scroll;
+    flex-grow: 1;
+    overflow: auto;
+    border: 3px inset #cccccc;
+
+    color: rgb(0,255,255);
+    font-size: .75em;
+}
+
+/* Browser */
+.modal-browser {
+    background-color: #cccccc;
+    padding: 3px;
+    vertical-align: middle;
+}
+
+.browser-flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+      
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+  }
+  
+.browser-item:nth-of-type(1) { flex-grow: 1; }
+.browser-item:nth-of-type(2) { flex-grow: 1; }
+.browser-item:nth-of-type(3) { flex-grow: 1; }
+.browser-item:nth-of-type(4) { flex-grow: 15; }
+.browser-item:nth-of-type(5) { flex-grow: 1; }
+  
+.browser-item {
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    line-height:1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.browser-icon {
+    margin: -1px 0 3px 3px;
+}
+
+/* Browse - Icons Special Effects*/
+
+#back {
+    color: black;
+    margin-right: 3px;
+}
+
+#back:hover,
+  #back:focus {
+    color: rgb(0,255,255);
+}
+
+#forward {
+    color: black;
+    margin-right: 3px;
+}
+
+#forward:hover,
+  #forward:focus {
+    color: hotpink;
+}
+
+#home {
+    color: black;
+    margin-right: 3px;
+}
+
+#home:hover,
+  #home:focus {
+    color: #462300;
+}
+
+#favourite {
+    color: black;
+    margin-right: 3px;
+}
+
+#favourite:hover,
+  #favourite:focus,
+  #favourite.activated {
+    color: goldenrod;
+}
+
+.browser-search-bar {
+    width: 100%;
+    border: 3px inset #cccccc;
+    background-color: white;
+    height: 20px;
+    
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    align-items: center;
+}
+
+.search-bar-text { 
+    padding-left: 5px;
+    flex-grow: 1; 
+    text-align: left;
+    font-size: .75em;
+}
+
+.search-bar-icon {
+    margin: -1px 0 3px 3px;
+}
+  
