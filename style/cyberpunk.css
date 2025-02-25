@@ -293,12 +293,12 @@ html, body {
     padding: 0px 5px 5px 5px;
 }
 
-.files-item:hover,
-  .files-item:focus {
+.files-item:hover, .files-item:hover span a,
+  .files-item:focus, .files-item:focus span a {
     color: rgba(255, 85, 170,0.33);
 }
 
-.files-item.activated {
+.files-item.activated, .files-item.activated span a {
     color: rgba(0, 0, 0,0.33);
 }
 
@@ -348,5 +348,23 @@ html, body {
 /*Footer*/
 .footer-text {
     margin: 0;
+}
+
+.socials {
+    float: right;
+    color: #551A8B;
+}
+
+.socials a:link {
+    color: #551A8B;
+}
+
+@media only screen and (max-width: 710px) {
+    #exe {
+        display: none;
+    }
+    .socials {
+        float: left;
+    }
 }
   
