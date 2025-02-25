@@ -22,7 +22,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <!-- The Modal -->
 <div class="" style="font-family: 'Press Start 2P', serif;">
   <!-- Modal content -->
-  <div class="modal-flex-container outset">
+  <div class="modal-flex-container">
     <!-- Title (modal-header) -->
     <div class="modal-item modal-header border grad">
         <h2 class="modal-title">Kate Homes | Software Developer</h2>
@@ -59,7 +59,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
                     <span class="search-bar-icon">
                         <i class="fa-solid fa-globe"></i>
                     </span>
-                    <span class="search-bar-text">https://katehomes.dev/test</span>
+                    <span class="search-bar-text">https://katehomes.github.io/test</span>
                     <span id="favourite" class="search-bar-icon">
                         <i class="fa-solid fa-star"></i>
                     </span>
@@ -105,7 +105,21 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
     });
 
-    
+    const home = document.getElementById('home');
+    home.addEventListener('click', function () {
+        window.location.href = 'home.html';
+
+    });
+
+    const back = document.getElementById('back');
+    back.addEventListener('click', function () {
+        history.back();
+    });
+
+    const forward = document.getElementById('forward');
+    forward.addEventListener('click', function () {
+        history.forward();
+    });
 
 </script>
 
