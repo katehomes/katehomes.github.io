@@ -77,6 +77,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
         </ul>
         
     </div>
+    <!-- File System -->
+    <div class="modal-item modal-files">
+        <ul class="files-flex-container">
+            <li class="files-item">
+                <span><a href="home.html">Home</a></span>
+            </li>
+            <li class="files-item">
+                <span>About Me</span>
+            </li>
+            <li class="files-item">
+                <span>Portfolio</span>
+            </li>
+            <li class="files-item">
+                <span>Resume</span>
+            </li>
+        </ul>
+        
+    </div>
+    <!-- Modal Content-->
     <div class="modal-item modal-content">
         <!-- Body-->
         <div class="modal-body">
@@ -139,11 +158,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
     });
 
     const menu = document.getElementById('menu');
-    menu.addEventListener('onmouseenter', function () {
-        alert("menu enter")
-    });
-    menu.addEventListener('onmouseexit', function () {
-        alert("menu exit")
+    menu.addEventListener('click', function () {
+        window.location.href = 'index.html';
     });
 
 </script>

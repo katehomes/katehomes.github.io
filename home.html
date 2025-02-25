@@ -21,7 +21,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 <!-- The Modal -->
 <div class="" style="font-family: 'Press Start 2P', serif;">
-  <!-- Modal content -->
+  <!-- Modal container -->
   <div class="modal-flex-container">
     <!-- Title (modal-header) -->
     <div class="modal-item modal-header border grad">
@@ -77,6 +77,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
         </ul>
         
     </div>
+    <!-- File System -->
+    <div class="modal-item modal-files">
+        <ul class="files-flex-container">
+            <li class="files-item">
+                <span><a href="home.html">Home</a></span>
+            </li>
+            <li class="files-item">
+                <span>About Me</span>
+            </li>
+            <li class="files-item">
+                <span>Portfolio</span>
+            </li>
+            <li class="files-item">
+                <span>Resume</span>
+            </li>
+        </ul>
+        
+    </div>
+    <!-- Modal Content-->
     <div class="modal-item modal-content">
         <!-- Body-->
         <div class="modal-body">
@@ -89,7 +108,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
             <p>> Currently focused on software engineering, expanding into game development.</p>
             <p>_</p>
             <!-- <p>> ENTER [Projects] to explore my work.</p> -->
-            <p>> Portfolio currently under constuction.</p>
+            <p>> Website currently under constuction.</p>
             <br/>
         </div>
 
@@ -141,12 +160,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
     });
 
     const menu = document.getElementById('menu');
-    menu.addEventListener('onmouseenter', function () {
-        alert("menu enter")
+    menu.addEventListener('click', function () {
+        window.location.href = 'index.html';
     });
-    menu.addEventListener('onmouseexit', function () {
-        alert("menu exit")
-    });
+
 
 </script>
 
