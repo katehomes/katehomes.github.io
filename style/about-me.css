@@ -1,0 +1,171 @@
+.folder-sets {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    width: fit-content;
+
+    /* align-items: center; */
+
+}
+
+.folder-container {
+    border: .2em solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.33);
+    margin: 1em;
+    color: white;
+    width: fit-content;
+}
+
+.folder-container-title {
+    border: .2em solid white;
+    border-radius: 5px;
+    background-color: black;
+    margin: 20px;
+    width: fit-content;
+    padding: .5em 1em;
+}
+
+.folder-list {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: left;
+    justify-content: left;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    width: fit-content;
+
+}
+
+.folder {
+    border: .2em solid white;
+    border-radius: 5px;
+    background-color: black;
+    margin:  0 20px 20px 20px;
+    min-width: 6em;
+    max-width: 14.5em;
+    width: fit-content;
+    height: 6em;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+
+    -ms-box-orient: vertical;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: space-around;
+    justify-content: center;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+
+    position: relative;
+}
+
+.folder-icon {
+    z-index: 100;
+    position: absolute;
+    top: -1.25em;
+    left: 1em;
+    width: 3em;
+    height: 1.75em;
+    border: .2em solid white;
+    border-radius: 5px;
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+
+    -ms-box-orient: vertical;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: space-around;
+    justify-content: center;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+
+.folder-text {
+    margin: .75em;
+}
+
+/*Colors*/
+
+.folder-container.cyan {
+    border: .2em solid rgba(0,255,255,1) !important;
+    background-color: rgba(0,255,255,0.33) !important;
+}
+
+.folder-container.cyan .folder-container-title {
+    border: .2em solid rgba(0,255,255,1) !important;
+}
+
+.folder-container.green {
+    border: .2em solid limegreen !important;
+    background-color: rgba(50, 205, 50, 0.33) !important;
+}
+
+.folder-container.green .folder-container-title {
+    border: .2em solid limegreen !important;
+}
+
+.folder-container.red {
+    border: .2em solid red !important;
+    background-color: rgba(255, 0, 0, 0.33) !important;
+}
+
+.folder-container.red .folder-container-title {
+    border: .2em solid red !important;
+}
+
+.folder-container.yellow {
+    border: .2em solid rgb(255, 234, 0) !important;
+    background-color: rgb(255, 234, 0, .33) !important;
+}
+
+.folder-container.yellow .folder-container-title {
+    border: .2em solid rgb(255, 234, 0) !important;
+}
+
+.folder-container.pink {
+    border: .2em solid hotpink !important;
+    background-color: rgb(255, 0, 122, .33)
+}
+
+.folder-container.pink .folder-container-title {
+    border: .2em solid hotpink !important;
+}
+
+.folder-container.violet {
+    border: .2em solid rgb(167, 0, 255) !important;
+    background-color: rgb(167, 0, 255, .33) !important;
+}
+
+.folder-container.violet .folder-container-title {
+    border: .2em solid rgb(167, 0, 255) !important;
+}

@@ -5,7 +5,7 @@ html, body {
 }
 .grad{
     background: rgb(0,255,255);
-    background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(255, 85, 170,1) 100%);
+    background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgb(255, 0, 122, 1) 100%);
 }
 
 /* The Modal (background) */
@@ -51,7 +51,7 @@ html, body {
     border: 3px outset #cccccc;
     width: 80vw; 
     min-width: 450px;
-    height: 70vh; 
+    height: 85vh; 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   
 }
@@ -177,7 +177,7 @@ html, body {
 
 #forward:hover,
   #forward:focus {
-    color: hotpink;
+    color: rgb(255, 0, 122);;
 }
 
 #home {
@@ -295,11 +295,11 @@ html, body {
 
 .files-item:hover, .files-item:hover span a,
   .files-item:focus, .files-item:focus span a {
-    color: rgba(255, 85, 170,0.33);
+    color: rgba(255, 0, 122, 1);
 }
 
 .files-item.activated, .files-item.activated span a {
-    color: rgba(0, 0, 0,0.33);
+    color: #551A8B;
 }
 
 .files-item a {
@@ -328,14 +328,28 @@ html, body {
 }
   
 .modal-body {
+    background-color: #1B1B2A;
     padding: 3px 16px;
-    background-color: #000;
     overflow: auto;
 
     color: rgb(0,255,255);
     font-size: .75em;
     flex-grow: 1;
 }
+
+.modal-body-heading {
+    text-decoration: underline;
+    color: rgb(255, 0, 122);
+    display:inline-block;
+}
+
+.modal-body-heading p {
+    text-decoration: none !important;
+    color:rgb(255, 0, 122);
+    display:inline-block;
+}
+
+/*Modal Footer*/
 
 .modal-footer {
     padding: 3px 16px;
@@ -350,6 +364,14 @@ html, body {
     margin: 0;
 }
 
+#keep-scrolling {
+    display: none;
+}
+
+#keep-scrolling.activated {
+    display: inline-block;
+}
+
 .socials {
     float: right;
     color: #551A8B;
@@ -359,9 +381,15 @@ html, body {
     color: #551A8B;
 }
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 960px) {
     #exe {
-        display: none;
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    #exe, #keep-scrolling {
+        display: none !important;
     }
     .socials {
         float: left;

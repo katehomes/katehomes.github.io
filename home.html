@@ -1,23 +1,17 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- My Stylesheets -->
-<link href="style/cyberpunk.css" rel="stylesheet">
-<script src="https://kit.fontawesome.com/157579bfe5.js" crossorigin="anonymous"></script>
-
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-
-
-</style>
+    <link href="style/cyberpunk.css" rel="stylesheet">
+    <link href="style/about-me.css" rel="stylesheet">
+    <link href="style/construction.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/157579bfe5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
+
 <body>
+
 
 <!-- The Modal -->
 <div class="" style="font-family: 'Press Start 2P', serif;">
@@ -84,10 +78,17 @@ body {font-family: Arial, Helvetica, sans-serif;}
                 <span><a href="home.html">Home</a></span>
             </li>
             <li class="files-item">
-                <span>About Me</span>
+                <span><a href="about-me.html">About Me</a></span>
             </li>
-            <li class="files-item">
+            <li id="portfolio-link"class="files-item">
                 <span>Portfolio</span>
+                <div id="construction" class="barberContainer deactivated">    
+                    <div class="barberWrap">         
+                      <div class="barber">
+                        <span class='construction-text'>UNDER <br/>CONSTRUCTION</span>
+                      </div>             
+                    </div>     
+                  </div>
             </li>
             <li class="files-item">
                 <span><a target="_blank" rel="noopener noreferrer" href="assets/katehomesresume.pdf">Resume</a></span>
@@ -115,6 +116,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
         <!-- Footer-->
         <div class="modal-footer">
             <span id="exe">kate.exe running...</span>
+            <span id="keep-scrolling">[keep scrolling]</span>
             <span class="socials">
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/katehomes">GitHub</a>
                 <span> | </span>
@@ -169,11 +171,38 @@ body {font-family: Arial, Helvetica, sans-serif;}
     const menu = document.getElementById('menu');
     menu.addEventListener('click', function () {
         window.location.href = 'index.html';
+    });  
+    
+    $(document).ready(function() {
+    var keepScrolling = $('#keep-scrolling');
+    var modalBody = $('.modal-body');
+
+    $(modalBody).scroll(function (e) {
+        var elem = $(e.currentTarget);
+        var bufferSize = 30;
+        var scrolledToBottom = (elem[0].scrollHeight - elem.scrollTop() - bufferSize) <= elem.outerHeight();
+        
+        if(scrolledToBottom){ $(keepScrolling).removeClass('activated'); }
+        else { $(keepScrolling).addClass('activated'); }
+        
     });
+
+    var portfolioLink = $('#portfolio-link');
+    var construction = $('#construction');
+
+    $(portfolioLink).hover(function() {
+        // Function to execute on mouseenter
+        $(construction).removeClass('deactivated');
+    }, function() {
+        // Function to execute on mouseleave
+        $(construction).addClass('deactivated');
+    });
+
+});
+
 
 
 </script>
-
 
 
   
