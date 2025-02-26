@@ -1,5 +1,5 @@
 .folder-sets {
-    -ms-box-orient: horizontal;
+    -ms-box-orient: vertical;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -8,9 +8,9 @@
     display: flex;
 
     -webkit-justify-content: space-around;
-    justify-content: space-around;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+    justify-content: start;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
 
     width: fit-content;
 
@@ -58,7 +58,7 @@
     border: .2em solid white;
     border-radius: 5px;
     background-color: black;
-    margin:  0 20px 20px 20px;
+    margin:  0 0px 20px 20px;
     min-width: 6em;
     max-width: 14.5em;
     width: fit-content;
@@ -81,6 +81,10 @@
     flex-flow: column wrap;
 
     position: relative;
+}
+
+.folder-list .folder:last-of-type{
+    margin:  0 20px 0 20px;
 }
 
 .folder-icon {
@@ -112,6 +116,24 @@
 
 .folder-text {
     margin: .75em;
+}
+
+.small-sets {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: left;
+    justify-content: left;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    width: fit-content;
+
 }
 
 /*Colors*/
